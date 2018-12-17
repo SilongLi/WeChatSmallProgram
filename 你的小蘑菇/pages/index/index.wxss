@@ -1,0 +1,29 @@
+/**index.wxss**/
+
+swiper, swiper-item, image {
+  width: 100%;
+  height: 400rpx;
+}
+
+.content {
+  width: 100%;
+  margin-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.plan {
+  width: 30%;
+  margin-bottom: 10rpx;
+}
+
+.plan image {
+  width: 100%;
+  height: 200rpx;
+}
+
+.plan_price {
+  color: red;
+  font-size: 28rpx;
+}

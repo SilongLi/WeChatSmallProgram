@@ -1,0 +1,27 @@
+<!--index.wxml-->
+
+<wxs module="filters" src="index.wxs"></wxs>
+
+<!-- 轮播图 -->
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+  circular="{{circular}}"
+>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper> 
+
+<!-- 内容 -->
+<view class="content"> 
+  <view class="plan" wx:for="{{plans}}">
+    <image src="{{item.plan_image}}"></image>
+    <view class="plan_name">{{item.plan_name}}</view>
+    <view class="plan_price">￥{{ filters.toFix(item.plan_price, 2) }}</view>
+  </view> 
+</view>

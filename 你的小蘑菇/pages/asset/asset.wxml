@@ -1,0 +1,7 @@
+<!--pages/asset/asset.wxml-->
+
+<button type='primary' bindtap='gotoUserPage'>跳转到资产详情页</button>
+
+<navigator url='assetDetial/assetDetial'>
+  <button type='warn'>跳转到资产详情页</button>
+</navigator>
